@@ -19,3 +19,11 @@ const data = [
   },
 ];
 
+const filtro = data.filter(dato => dato.id === 4)
+    let array = [];
+    if(filtro){
+        array.push(filtro)
+        console.log(array)
+        }
+
+      console.log(array)  
