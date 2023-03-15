@@ -27,3 +27,7 @@ const filtro = data.filter(dato => dato.id === 4)
         }
 
       console.log(array)  
+
+      data.map(char =>{
+        console.log(char.name)
+      })
