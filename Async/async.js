@@ -1,12 +1,18 @@
-const axios = require('axios');
+const axios = require('axios')
 
-async function api(){
+
+async function app(){
     try{
-        const res = await axios('https://jsonplaceholder.typicode.com/users')
-        const dataApi = res.dataApi
-        console.log(dataApi)
+        const response =  axios('https://pokeapi.co/api/v2/pokemon/pikachu')
+        .then(response => response.data)
+        .then(data => {
+            
+           console.log(data)
+        })
     }
     catch(err){
         console.log(err)
     }
 }
+
+app()
